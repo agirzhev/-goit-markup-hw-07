@@ -1,4 +1,4 @@
-.pichers-title {
+.pichers__title {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
@@ -14,14 +14,14 @@
   display: flex;
 }
 
-.pichers-foto {
+.pichers-list__foto {
   position: relative;
   &:not(:first-child) {
     margin-left: 30px;
   }
 }
 
-.pichers-list-text {
+.pichers-list__cotanrt {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.pichers-text {
+.pichers-list__text {
   display: flex;
   font-weight: 700;
   font-size: 14px;

@@ -51,7 +51,7 @@ body {
   padding-bottom: 94px;
 }
 
-.header-list-link {
+.header-list__link {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -64,7 +64,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list-link:hover, .header-list-link:focus {
+.header-list__link:hover, .header-list__link:focus {
   color: var(--secondary-text-color);
 }
 
@@ -84,15 +84,41 @@ body {
           align-items: center;
 }
 
-.header-list-item:not(:first-child) {
+.header-list__item:not(:first-child) {
   padding-left: 50px;
+}
+
+.header-list__email {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list__email:hover, .header-list__email:focus {
+  fill: var(--secondary-text-color);
+}
+
+.header-list__phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-list__phone:hover, .header-list__phone:focus {
+  fill: var(--secondary-text-color);
 }
 
 .header-portfolio {
   border-bottom: 1px solid var(--line-fist-color);
 }
 
-.header-logo {
+.header__logo {
   /* margin-right: 93px; */
   font-family: Raleway;
   font-weight: 700;
@@ -103,7 +129,7 @@ body {
   text-decoration: none;
 }
 
-.header-logo-web {
+.header__logo-web {
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: Raleway;
@@ -115,7 +141,7 @@ body {
   text-decoration: none;
 }
 
-.site-nav-link {
+.site-nav__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -129,7 +155,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-link:hover, .site-nav-link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--secondary-text-color);
   text-decoration: none;
   -moz-tab-size: 1;
@@ -137,7 +163,7 @@ body {
        tab-size: 1;
 }
 
-.site-nav-item:not(:first-child) {
+.site-nav__item:not(:first-child) {
   padding-left: 50px;
 }
 
@@ -158,37 +184,11 @@ body {
   border-radius: 2px;
 }
 
-.site-nav-list {
+.site-nav__list {
   margin-left: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.icon-email {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-email:hover, .icon-email:focus {
-  fill: var(--secondary-text-color);
-}
-
-.icon-phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-phone:hover, .icon-phone:focus {
-  fill: var(--secondary-text-color);
 }
 
 .hero {
@@ -203,7 +203,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin: 0;
   padding: 0;
   margin-left: 237px;
@@ -218,7 +218,7 @@ body {
   color: var(--primery-background-color);
 }
 
-.hero-button {
+.hero__button {
   min-height: 50px;
   min-width: 200px;
   font-weight: bold;
@@ -246,16 +246,16 @@ body {
   text-align: left;
 }
 
-.company-item {
+.company-list__item {
   width: 270px;
   height: 251px;
 }
 
-.company-item:not(:first-child) {
+.company-list__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.company-title {
+.company-list__title {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -267,7 +267,7 @@ body {
   color: var(--primery-text-color);
 }
 
-.company-text {
+.company-list__text {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -293,12 +293,12 @@ body {
   background-color: var(--section-background-color);
 }
 
-.details-icon {
+.details__icon {
   width: 70px;
   height: 70px;
 }
 
-.pichers-title {
+.pichers__title {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
@@ -316,15 +316,15 @@ body {
   display: flex;
 }
 
-.pichers-foto {
+.pichers-list__foto {
   position: relative;
 }
 
-.pichers-foto:not(:first-child) {
+.pichers-list__foto:not(:first-child) {
   margin-left: 30px;
 }
 
-.pichers-list-text {
+.pichers-list__cotanrt {
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -343,7 +343,7 @@ body {
           align-items: center;
 }
 
-.pichers-text {
+.pichers-list__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

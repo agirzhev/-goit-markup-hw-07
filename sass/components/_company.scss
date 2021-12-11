@@ -7,7 +7,7 @@
   text-align: left;
 }
 
-.company-item {
+.company-list__item {
   width: 270px;
   height: 251px;
   &:not(:first-child) {
@@ -15,7 +15,7 @@
   }
 }
 
-.company-title {
+.company-list__title {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -27,7 +27,7 @@
   color: var(--primery-text-color);
 }
 
-.company-text {
+.company-list__text {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -47,7 +47,7 @@
   background-color: var(--section-background-color);
 }
 
-.details-icon {
+.details__icon {
   width: 70px;
   height: 70px;
 }
