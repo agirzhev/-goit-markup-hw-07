@@ -4,7 +4,7 @@
   margin-top: 20px;
 }
 
-.form-label {
+.form__label {
   margin: 0;
   padding: 0;
   padding-left: 16px;
@@ -17,7 +17,7 @@
   background-color: var(--header-background-color);
 }
 
-.button-mailing {
+.form__button {
   margin: 0;
   padding: 0;
   margin-left: 12px;
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-.mailing-icon {
+.form__icon {
   align-items: center;
   text-align: center;
   fill: var(--primery-background-color);

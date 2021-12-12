@@ -1,4 +1,4 @@
-.modal-form {
+.modal__form {
   padding: 0;
   margin: 0;
   padding-top: 40px;
@@ -6,7 +6,7 @@
   padding-right: 40px;
 }
 
-.order-tirle {
+.order__tirle {
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -30,7 +30,7 @@
   }
 }
 
-.input-box {
+.input__box {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -50,7 +50,7 @@
   }
 }
 
-.input-title {
+.input__title {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -77,7 +77,7 @@
   }
 }
 
-.input-text {
+.input__text {
   margin: 0;
   resize: none;
   padding-left: 16px;
@@ -117,7 +117,7 @@
   color: var(--link-text-color);
 }
 
-.input-check-label {
+.check-box__input {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -136,12 +136,12 @@
   }
 }
 
-.label-check {
+.check-box__label {
   display: flexbox;
   align-items: center;
 }
 
-.input-check-icon {
+.check-box__icon {
   display: inline-block;
   transform: translateY(3px);
   margin-right: 7px;
@@ -151,7 +151,7 @@
   border-radius: 2px;
   /* background-color: tomato; */
 
-  .input-check-label:checked + & {
+  .check-box__input:checked + & {
     background-image: url('../images/check.svg');
     background-size: contain;
     background-origin: content-box;
@@ -159,7 +159,7 @@
   }
 }
 
-.input-check-contract {
+.check-box__contract {
   color: var(--secondary-text-color);
 }
 
